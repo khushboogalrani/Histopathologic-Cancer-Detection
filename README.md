@@ -65,3 +65,26 @@ Manual examination of histopathology slides is labor-intensive and error-prone. 
 ### Clone the Repository:
 ```bash
 git clone https://github.com/your-username/histopathologic-cancer-detection.git
+```
+---
+
+### Install Dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Tested on:
+ - Python 3.9+
+ - TensorFlow 2.8.0+
+ - Scikit-learn 1.0.2+
+ - Matplotlib 3.5+
+
+---
+
+## Run the Notebook:
+Open Cancer_Detection_CNN_DenseNet.ipynb in Jupyter or Colab and execute all cells sequentially.
+
+---
+
+## 📜 Acknowledgments
+Dataset sourced from PatchCamelyon Dataset

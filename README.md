@@ -1,62 +1,67 @@
-Histopathologic Cancer Detection Using Deep Learning
-📚 Project Overview
-This project explores the application of deep learning models for automated detection of cancer in histopathology images. It compares the performance of a custom-built Convolutional Neural Network (CNN) with a pre-trained DenseNet-201 model, evaluating their ability to classify tissue samples as benign or malignant.
+# Histopathologic Cancer Detection Using Deep Learning 🧬
 
-Dataset: PatchCamelyon (PCam) Dataset
+## 📚 Project Overview
+This project explores deep learning approaches for cancer detection in histopathology images. It compares the performance of a **custom Convolutional Neural Network (CNN)** and a **pre-trained DenseNet-201** model to classify tissue samples as benign or malignant.
 
-Models Used: Custom CNN, DenseNet-201 (transfer learning)
+- **Dataset:** [PatchCamelyon (PCam)](https://github.com/basveeling/pcam)
+- **Tech Stack:** Python, TensorFlow, Keras, Scikit-learn, Matplotlib
+- **Techniques:** CNN from scratch, Transfer Learning with DenseNet, Data Augmentation, Evaluation Metrics
 
-Tools & Libraries: Python, TensorFlow, Keras, Numpy, Matplotlib, Scikit-learn
+---
 
-🔍 Problem Statement
-Accurate identification of metastases in lymph node histopathology images is crucial for effective cancer diagnosis and treatment planning. Manual examination is time-intensive and prone to human error. This project aims to automate cancer detection using deep learning to assist pathologists and improve diagnostic accuracy.
+## 🖼 Sample Dataset Images
 
-🏗 Project Structure
-Final_Code.ipynb – Jupyter Notebook with data preprocessing, model training, evaluation.
+<div align="center">
+  <img src="images/e9b14923-1549-4629-9def-2c0ebb10c620.png" width="800"/>
+</div>
 
-Project_Paper.pdf – Detailed project report with background, methodology, results, and future work.
+The PatchCamelyon (PCam) dataset contains high-resolution histopathology patches labeled as **benign** or **malignant**, helping automate metastasis detection.
 
-/images – (Optional) Visualizations like confusion matrices, accuracy curves.
+---
 
-🚀 Key Highlights
-Developed a custom CNN achieving 91.9% validation accuracy.
+## 🚀 Problem Statement
+Manual examination of histopathology slides is labor-intensive and error-prone. This project aims to automate cancer diagnosis from tissue images using CNNs, thereby improving diagnostic accuracy, reducing human error, and supporting medical decision-making.
 
-Fine-tuned DenseNet-201 model using transfer learning achieving 97.3% validation accuracy.
+---
 
-Applied data augmentation techniques (rotation, flipping, zoom) to improve model generalization.
+## 🏗 Project Structure
+| File/Folder | Description |
+|:---|:---|
+| `Cancer_Detection_CNN_DenseNet.ipynb` | End-to-end notebook (preprocessing, modeling, evaluation) |
+| `Project_Report.pdf` | Detailed project paper (methodology, results, discussion) |
+| `/images/` | Dataset samples, confusion matrices, graphs (optional) |
+| `requirements.txt` | List of Python package dependencies |
+| `README.md` | Project summary and setup guide |
 
-Evaluated models using metrics like Accuracy, Precision, Recall, Confusion Matrix.
+---
 
-📊 Results
+## 📈 Key Highlights
+- Built a custom CNN achieving **91.9% validation accuracy**.
+- Fine-tuned DenseNet-201 achieving **97.3% validation accuracy** using transfer learning.
+- Applied **data augmentation** (rotation, flipping, zooming) for improved generalization.
+- Evaluated models using **accuracy**, **precision**, **recall**, and **confusion matrices**.
+- Analyzed limitations of custom CNN vs. pre-trained networks in complex datasets.
 
-Model	Validation Accuracy
-Custom CNN	91.9%
-DenseNet-201	97.3%
-DenseNet-201 outperformed the custom CNN, demonstrating the effectiveness of transfer learning in medical image classification.
+---
 
-🔮 Future Work
-Implement Grad-CAM to visualize model interpretability.
+## 📊 Results Summary
 
-Address class imbalance with oversampling or adjusting class weights.
+| Model | Validation Accuracy |
+|:---|:---|
+| Custom CNN | 91.9% |
+| DenseNet-201 (Transfer Learning) | 97.3% |
 
-Explore ensemble methods combining outputs from CNN and DenseNet.
+---
 
-🛠 How to Run Locally
-Clone the repository:
+## 🔮 Future Work
+- Apply **Grad-CAM** for model interpretability.
+- Address dataset **class imbalance** with oversampling and weighted loss functions.
+- Explore **ensemble methods** combining multiple deep learning models.
 
-bash
-Copy
-Edit
+---
+
+## 🛠 Setup Instructions
+
+### Clone the Repository:
+```bash
 git clone https://github.com/your-username/histopathologic-cancer-detection.git
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Open Final_Code.ipynb in Jupyter Notebook.
-
-Run all cells sequentially.
-
-📜 Acknowledgments
-Dataset sourced from PCam Dataset (PatchCamelyon).

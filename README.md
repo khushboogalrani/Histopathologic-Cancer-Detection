@@ -66,7 +66,6 @@ Manual examination of histopathology slides is labor-intensive and error-prone. 
 ```bash
 git clone https://github.com/your-username/histopathologic-cancer-detection.git
 ```
----
 
 ### Install Dependencies:
 ```bash

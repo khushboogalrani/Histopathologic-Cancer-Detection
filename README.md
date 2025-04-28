@@ -12,7 +12,7 @@ This project explores deep learning approaches for cancer detection in histopath
 ## 🖼 Sample Dataset Images
 
 <div align="center">
-  <img src="images/e9b14923-1549-4629-9def-2c0ebb10c620.png" width="800"/>
+  <img src="images/sample_data.png" width="800"/>
 </div>
 
 The PatchCamelyon (PCam) dataset contains high-resolution histopathology patches labeled as **benign** or **malignant**, helping automate metastasis detection.
@@ -47,7 +47,7 @@ Manual examination of histopathology slides is labor-intensive and error-prone. 
 ## 📊 Results Summary
 
 | Model | Validation Accuracy |
-|:---|:---|
+|:------|:---|
 | Custom CNN | 91.9% |
 | DenseNet-201 (Transfer Learning) | 97.3% |
 
